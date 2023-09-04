@@ -10,17 +10,17 @@ const PrincipalPage = () => {
 
 
     const textoArray = [ 
-        "La historia del Restaurante La Pista es una verdadera historia de emprendimiento y pasión por los negocios. Todo comenzó en 2007 cuando dos primos, Miguel y Rodrigo, decidieron empezar un proyecto juntos. Su idea inicial era construir un club de carros de control remoto, y tras investigar y buscar la representación de una marca japonesa, se pusieron manos a la obra para construir la primera pista de carritos off-road de Guatemala.",
+        "La historia del Restaurante La Pista es un testimonio de emprendimiento y pasión por la gastronomía y los negocios. Lo que comenzó como un club de carros de control remoto en 2007, se transformó en un restaurante de renombre en Guatemala.",   
 
-        "No solo construyeron la pista, también levantaron una cabaña de madera rústica que le dio al lugar un encanto único. La madre de Miguel, Ana, fue la encargada de llevar adelante la construcción y poner su propio estilo en ella. Así fue como en 2007 nació el club GTZ RACING, y rápidamente se convirtió en un éxito. Los fines de semana había competencias, eran más de 40 socios que pagaban su membresía y compraban carritos y repuestos. Con el tiempo, la gente empezó a referirse al lugar como 'La Pista'.",
-        
-        "En 2008, sin embargo, algo inesperado empezó a cambiar la dirección del negocio. El hermano de Rodrigo, el Chef Rick, diseñó 4 bocatas para vender a los socios del club, pero pronto empezaron a llegar clientes que no tenían nada que ver con los carritos de control remoto. Las bocatas se volvieron famosas, y cada día llegaban más clientes al lugar.", 
-        
-        "En 2009, Chef Rick se unió oficialmente al equipo y decidieron transformar el lugar en un restaurante al 100%. Con el apoyo de sus padres, pudieron poner el lugar en condiciones, comprar equipo y vajilla, y un tío les regaló todas las mesas y sillas para el restaurante. El lugar quedó rústico y encantador, y en honor a su historia, decidieron mantener el nombre de La Pista.", 
-        
-        "Sin embargo, la primera decisión importante que tomaron fue cerrar el club de carritos para dedicarse de lleno al restaurante. Se propusieron una regla fundamental: lo único que importa es que los clientes se vayan contentos. En la noche de la apertura, imprimieron el primer menú en papel bond sin saber si los clientes encontrarían el lugar, pero con mucha fe y la experiencia del Chef Rick, empezaron a recibir mesas desde el primer turno.", 
-        
-        "Desde entonces, nunca han tenido un turno en blanco y siempre han atendido a al menos una persona en cada turno, manteniendo el récord durante casi 14 años. En septiembre de 2009, inauguraron oficialmente el restaurante La Pista, y desde entonces, han continuado haciendo lo único que hace que un restaurante tenga éxito: asegurarse de que los clientes regresen. La historia de La Pista es un verdadero ejemplo de cómo la creatividad, el apoyo de la familia y la pasión por el negocio pueden crear un éxito duradero."
+        "Los primos Miguel y Rodrigo construyeron una pista de carritos off-road y una encantadora cabaña de madera para darle un toque especial al lugar. Sin embargo, en 2008, el Chef Rick, hermano de Rodrigo, introdujo cuatro bocatas que se volvieron sumamente populares, atrayendo a clientes que no tenían relación con los carritos de control remoto.",
+
+        "En 2009, decidieron convertir La Pista en un restaurante y con apoyo de sus padres y la creatividad, experiencia y liderazgo del Chef Rick, transformaron el lugar.",
+
+        "El restaurante abrió oficialmente sus puertas en septiembre de 2009,  conservando su nombre original, LA PISTA.",
+
+        "Desde entonces, La Pista ha sido un éxito constante, con una regla fundamental: la satisfacción del cliente es lo más importante. Con el talento culinario y el encanto rústico del lugar, han logrado mantener una afluencia constante de clientes durante casi 14 años.",
+
+        "La historia de La Pista es un ejemplo inspirador de cómo la creatividad, el respaldo familiar y la pasión por la cocina pueden crear un éxito duradero. Su enfoque en asegurarse de que los clientes regresen ha sido la clave de su triunfo, destacando la calidad culinaria y la originalidad de sus platos.",
     ]
 
     const [visibleParagraphs, setVisibleParagraphs] = useState(1)
@@ -48,7 +48,6 @@ const PrincipalPage = () => {
             </section>
             <section id='nosotros' className={styles.nosotros}>
                 <div className={styles.nosotros__content}>
-                    <Title title1="HACER UNA COCINA QUE DISTINGA LO MEJOR DEL PRODUCTO DISPONIBLE"  color="#000" fontsize="28px" center/>
                     <div className={styles.nosotros__content__text}>
                         {textoArray.slice(0, visibleParagraphs).map((paragraph, index) => (
                             <p key={index}>{paragraph}</p>

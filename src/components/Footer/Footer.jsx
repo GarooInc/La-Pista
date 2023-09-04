@@ -9,7 +9,8 @@ const Footer = () => {
             <div className={styles.footercontainer}>
                 <div className={styles.footercontainerleft}>
                     <span className={styles.footercontainertitle}>Horarios</span>
-                    <span className={styles.footercontainertext}>Lunes a Sábado: 9:00 am a 10:00 pm</span>
+                    <span className={styles.footercontainertext}>Lunes a Viernes: 12:00 am a 10:00 pm</span>
+                    <span className={styles.footercontainertext}>Sábado: 9:00 am a 10:00 pm</span>
                     <span className={styles.footercontainertext}>Domingo: 9:00 am a 4:00 pm</span>
                 </div>
                 <div className={styles.footercontainerright}>
@@ -42,8 +43,4 @@ const Footer = () => {
 Footer.propTypes = {
 }
 
-export default Footer
-
-                
-
-                   
+export default Footer 

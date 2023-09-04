@@ -60,6 +60,8 @@ const Contact = () => {
                             <option value="Cumpleaños">Cumpleaños</option>
                             <option value="Graduación">Graduación</option>
                             <option value="Aniversario">Aniversario</option>
+                            <option value="Reunión de trabajo">Reunión de trabajo</option>
+                            <option value="Evento Corporativo">Evento Corporativo</option>
                             <option value="Otro">Otro</option>
                         </select>
                         <textarea
