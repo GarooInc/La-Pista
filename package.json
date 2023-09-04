@@ -13,6 +13,8 @@
     "@storeon/router": "^2.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
+    "react-scroll": "^1.8.9",
     "storeon": "^3.1.5"
   },
   "devDependencies": {

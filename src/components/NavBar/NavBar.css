@@ -1,0 +1,137 @@
+.header {
+    position: fixed;
+    height: 150px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .3s ease-in;
+    overflow: hidden;
+    background-color: #f9f8ef;
+}
+
+.header .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.nav-menu-submenu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.nav-menu-submenu.open {
+    display: block;
+}
+
+a.linkmenu {
+    text-decoration: underline !important;
+}
+
+.header .nav-menu a {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "HTOWERT";
+    font-size: 22px;
+}
+
+.header .navbar img {
+    width: 150px;
+    height: auto;
+}
+
+
+.header .nav-menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    width: 100%;
+    gap: 2%;
+    padding: 0;
+    margin: 0;
+
+}
+
+.header .nav-item {
+    padding: 1rem;
+    font-weight: 500;
+}
+
+.header .nav-item a:hover {
+    padding-bottom: 12px;
+    border-bottom: 3px solid #018546;
+}
+
+.nav-item .active {
+    padding-bottom: 12px;
+    border-bottom: 3px solid #018546;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+
+@media screen and (max-width:940px) {
+    .header {
+        max-width: 100%;
+        background-color: #f9f8ef;
+        height: 100px;
+    }
+
+    .header .navbar {
+        max-width: 100%;
+        padding: 0 2rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header .nav-menu {
+        justify-content: flex-start;
+    }
+
+    .navbar button {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        color: #018546;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 100px;
+        flex-direction: column;
+        background-color: #f9f8ef;
+        width: 100%;
+        height: 100vh;
+        z-index: 999;
+        text-align: center;
+        transition: .3s;
+        list-style: none;
+        padding: 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+        top: 10%;
+    }
+
+    .nav-item {
+        margin: 1.5rem 0;
+    }
+
+    .header .navbar img {
+        width: 120px;
+    }
+}

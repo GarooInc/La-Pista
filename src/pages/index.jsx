@@ -2,6 +2,7 @@ import { useStoreon } from "storeon/react"
 import { routerKey } from "@storeon/router"
 import React from "react"
 import PrincipalPage from "./PrincipalPage/PrincipalPage"
+import Galery from "./Galery/Galery"
 
 function Page() {
     const { [routerKey]: route } = useStoreon(routerKey)
@@ -11,6 +12,11 @@ function Page() {
         case "home":
             Component = <PrincipalPage />
             break
+
+        case "galery":
+            Component = <Galery />
+            break
+
         default:
             Component = <h1>404</h1>
             break
