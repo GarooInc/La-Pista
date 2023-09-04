@@ -51,7 +51,7 @@ const Contact = () => {
                         <input type="text" placeholder="Correo" name="reply_to" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })}/>
                         <input type="text" placeholder="Teléfono" name="cellphone" value={formData.cellphone} onChange={(e) => setFormData({ ...formData, cellphone: e.target.value })}/>
                         <span className={styles.contactright__span}>Fecha tentativa</span>
-                        <input type="date" placeholder="Fecha" name="date" value={formData.date} onChange={(e) => setFormData({ ...formData, date: e.target.value })}/>
+                        <input type="date" placeholder="10/01/2024" name="date" value={formData.date} onChange={(e) => setFormData({ ...formData, date: e.target.value })}/>
                         <span className={styles.contactright__span}>Tipo de evento</span>
                         <select name="type_event" id="" value={formData.typeevent} onChange={(e) => setFormData({ ...formData, typeevent: e.target.value })}>
                             <option value="Boda">Boda</option>
