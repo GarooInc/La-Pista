@@ -5,10 +5,10 @@ const Contact = () => {
 
     const [formData, setFormData] = useState({
         name: "",
-        lastname: "",
         email: "",
         message: "",
         typeevent: "",
+        date : "",
     })
 
     const handleSubmit = async (e) => {
@@ -47,10 +47,11 @@ const Contact = () => {
             <div className={styles.contactinfo}>
                 <div className={styles.contactright}>
                     <form onSubmit={handleSubmit}>
-                        <input type="text" placeholder="Nombres" name="from_name" value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })}/>
-                        <input type="text" placeholder="Apellidos" name="last_name" value={formData.lastname} onChange={(e) => setFormData({ ...formData, lastname: e.target.value })}/>
+                        <input type="text" placeholder="Nombre" name="from_name" value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })}/>
                         <input type="text" placeholder="Correo" name="reply_to" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })}/>
                         <input type="text" placeholder="Teléfono" name="cellphone" value={formData.cellphone} onChange={(e) => setFormData({ ...formData, cellphone: e.target.value })}/>
+                        <span className={styles.contactright__span}>Fecha tentativa</span>
+                        <input type="date" placeholder="Fecha" name="date" value={formData.date} onChange={(e) => setFormData({ ...formData, date: e.target.value })}/>
                         <span className={styles.contactright__span}>Tipo de evento</span>
                         <select name="type_event" id="" value={formData.typeevent} onChange={(e) => setFormData({ ...formData, typeevent: e.target.value })}>
                             <option value="Boda">Boda</option>
@@ -65,7 +66,7 @@ const Contact = () => {
                             id=""
                             cols="30"
                             rows="10"
-                            placeholder="Mensaje"
+                            placeholder="Comentario"
                             name="message"
                             value={formData.message}
                             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
