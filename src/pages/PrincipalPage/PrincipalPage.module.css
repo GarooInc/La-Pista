@@ -99,6 +99,14 @@ section{
     background-color: #f9f8ef;
 }
 
+.footercopyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'HTOWERT';
+    text-align: center;
+}
+
 .lastfooter .waves{
     width: 100%;
     background-color: #f9f8ef;

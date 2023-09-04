@@ -1,0 +1,185 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container h2{
+    font-family: "TT Drugs Trial Bold";
+}
+
+.contactinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+}
+
+.contactright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 200px);
+    height: 100%;
+    padding: 40px;
+    background-color: #f9f8ef;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-bottom: 2%;
+}
+
+.contactright input, .contactright select{
+    font-family: "HTOWERT";
+    padding: 10px 20px;
+    color: #000000;
+    border : 1px solid #000000;
+    border-color: #000000;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+    width: calc(100% - 40px);
+}
+
+.contactright select{
+    width: 100% !important;
+}
+
+.contactright input:-internal-autofill-selected {
+    background-color: #fff !important;
+}
+
+.contactright__button{
+    font-family: "HTOWERT";
+    padding: 10px 20px;
+    color: #000000;
+    border : 1px solid #000000;
+    border-color: #000000;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+    width: 50%;
+}
+
+.contact__content__info__p{
+    font-family: "HTOWERT";
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    color: #000;
+}
+
+.contactright__span{
+    font-family: "HTOWERT";
+    font-size: 18px;
+    width: 100%;
+    color: #000;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.contactright form textarea{
+    font-family: "HTOWERT";
+    padding: 10px 20px;
+    color: #000000;
+    border : 1px solid #000000;
+    border-color: #000000;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+    width: calc(100% - 40px);
+
+}
+
+.contactright form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    font-family: "BaskervilleBT";
+}
+
+.h1c{
+    font-size: 2rem;
+    text-align: center;
+    width: 40%;
+    margin-bottom: 30px;
+    font-family: "HTOWERT";
+}
+
+.contact__content__info__phone a{
+    color: #000;
+    text-decoration: none;
+}
+
+.contact__content__info__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    color : #000;
+    width: calc(100% - 40px);
+    background-color: #f9f8ef;
+}
+
+
+.contact__content__info__phone{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap : 20px;
+        
+    }
+
+    .contactinfo{
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .contactright input, .contactright form textarea{
+        font-size: 16px;
+    }
+
+    .h1c{
+        font-size: 1.5rem;
+        text-align: center;
+        width: 80%;
+        margin-bottom: 0;
+    }
+
+
+    .contactright{
+        width: calc(100% - 60px);
+        margin-bottom: 30px;
+        padding: 40px 20px;
+    }
+
+}
+
+

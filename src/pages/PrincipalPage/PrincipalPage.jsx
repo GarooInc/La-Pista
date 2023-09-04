@@ -40,6 +40,7 @@ const PrincipalPage = () => {
                                 <li><a href="https://drive.google.com/file/d/1mk2Vo0pIqcEK0BYtWd_i3bW27-H-KKCc/view?mcp_token=eyJwaWQiOjE3NjkxNTMzNTY5Njc1MSwic2lkIjoyNjQ1ODcyMDEsImF4IjoiN2E0OWU0NjhjMjQxZTQyMzA2MzI1ZDU1ODEzOTZjYTciLCJ0cyI6MTY5MzUwNzM5NSwiZXhwIjoxNjk1OTI2NTk1fQ.uGo6D_sD-fe3w1HncnCk4q8EL84xehJZ4-xIvugQYmM">Almuerzos/Cenas</a></li>
                             </ul>
                             <li><a href='https://eatapp.co/reserve/la-pista-20fb20'>Reservaciones</a></li>
+                            <li><a href='contact'>Eventos especiales</a></li>
                             <li><a href='galery'>Galería</a></li>
                         </ul>
                     </nav>
@@ -73,6 +74,9 @@ const PrincipalPage = () => {
                 <img src='/images/waves.png' alt='waves' className={styles.waves} />
                 <div className={styles.lastfooter__content}>
                     <span className={styles.lastfootertext}>Km 9.5 Carretera a Muxbal Guatemala, 01051, GT</span>
+                    <p className={styles.footercopyright} onClick={
+                        () => window.open("https://garoo.info/", "_blank")
+                    }>© 2023 Garoo Inc. All Rights Reserved.</p>
                 </div>
             </div>
         </div>

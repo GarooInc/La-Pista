@@ -31,7 +31,7 @@ export const galeryImages = [
     },
     {
         id: 7,
-        src: "/images/galery/7.jpeg",
+        src: "/images/galery/7.jpg",
         alt: "7"
     },
     {
@@ -66,28 +66,8 @@ export const galeryImages = [
     },
     {
         id: 14,
-        src: "/images/galery/14.jpeg",
+        src: "/images/galery/14.jpg",
         alt: "14"
-    },
-    {
-        id: 15,
-        src: "/images/galery/15.jpeg",
-        alt: "15"
-    },
-    {
-        id: 16,
-        src: "/images/galery/16.jpeg",
-        alt: "16"
-    },
-    {
-        id: 17,
-        src: "/images/galery/17.jpeg",
-        alt: "17"
-    },
-    {
-        id: 18,
-        src: "/images/galery/18.jpg",
-        alt: "18"
     }
 ]
 

@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/zapier/*"
+  to = "https://hooks.zapier.com/:splat"
+  status = 200
+  force = true

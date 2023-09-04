@@ -3,6 +3,7 @@ import { routerKey } from "@storeon/router"
 import React from "react"
 import PrincipalPage from "./PrincipalPage/PrincipalPage"
 import Galery from "./Galery/Galery"
+import ContactPage from "./Contact/ContactPage"
 
 function Page() {
     const { [routerKey]: route } = useStoreon(routerKey)
@@ -15,6 +16,10 @@ function Page() {
 
         case "galery":
             Component = <Galery />
+            break
+
+        case "contact":
+            Component = <ContactPage />
             break
 
         default:
