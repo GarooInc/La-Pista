@@ -1,0 +1,77 @@
+.titleunderlined{
+    display: flex;
+    border-bottom: 3px solid #29ABE2;
+}
+
+.titlecolumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+}
+
+
+.linetittle {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+}
+
+.titlecolumn .title1{
+    color : #fff;
+    font-family: 'TT Drugs Trial Bold', sans-serif;
+    font-weight: normal;
+}
+
+.title2{
+    font-family: "TDrugs";
+    white-space: pre-line;
+}
+
+.titlecolumn .title2{
+    color : #29ABE2;
+}
+
+.titleunderlined .title1{
+    color : #fff;
+    text-transform: capitalize;
+}
+
+.titleunderlined .title2{
+    color : #29ABE2;
+}
+
+
+@media screen and (max-width:940px) {
+    .titlecolumn .title1{
+        font-size: 22px !important;
+    }
+
+    .titlecolumn .title2{
+        font-size: 25px !important;
+        margin: 0;
+        padding: 0;
+    }
+
+    .titleunderlined{
+        font-size: 32px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .linetittle{
+        justify-content: center !important;
+    }
+
+    .titlecolumn{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 4%;
+    }
+
+}
