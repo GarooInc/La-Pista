@@ -35,11 +35,6 @@ export const galeryImages = [
         alt: "7"
     },
     {
-        id: 8,
-        src: "/images/galery/8.jpeg",
-        alt: "8"
-    },
-    {
         id: 9,
         src: "/images/galery/9.jpeg",
         alt: "9"
