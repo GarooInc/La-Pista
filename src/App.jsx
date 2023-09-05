@@ -3,7 +3,7 @@ import { StoreContext } from "storeon/react"
 import store from "./store/index"
 import Page from "./pages/index"
 import styles from "./App.module.css"
-import fonts from "./assets/fonts/fonts.css"
+import "./assets/fonts/fonts.css"
 
 function App() {
     return (
