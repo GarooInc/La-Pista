@@ -1,7 +1,12 @@
 import React,{useState} from "react"
 import styles from "./Contact.module.css"
+import { navigate } from "../../store"
 
 const Contact = () => {
+
+    const [showPopup, setShowPopup] = useState(false);
+    const [popupMessage, setPopupMessage] = useState("");
+
 
     const [formData, setFormData] = useState({
         name: "",
@@ -29,9 +34,11 @@ const Contact = () => {
             })
 
             if (response.ok) {
-                console.log("Datos enviados a Zapier exitosamente")
+                setPopupMessage("Formulario enviado exitosamente!")
+                setShowPopup(true)
             } else {
-                console.error("Error al enviar los datos")
+                setPopupMessage("Error al enviar el formulario. Inténtalo de nuevo.");
+                setShowPopup(true)
             }
         } catch (error) {
             console.error("Hubo un error:", error)
@@ -40,6 +47,15 @@ const Contact = () => {
     
     return (
         <div className={styles.container}>
+            {showPopup && (
+                <div className={styles.popup}>
+                    <p>{popupMessage}</p>
+                    <button onClick={() => {
+                        setShowPopup(false)
+                        navigate("/")
+                    }}>Regresar</button>
+                </div>
+            )}
             <div className={styles.contact__content__info__container}>
                 <h2> A continuación puede ponerse en contacto con Restaurante La Pista. </h2>
                 <p className={styles.contact__content__info__p}> Deja tu mensaje y nos pondremos en contacto contigo lo antes posible. </p>
