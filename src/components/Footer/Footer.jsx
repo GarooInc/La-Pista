@@ -17,7 +17,7 @@ const Footer = () => {
                     <div className={styles.footercontainerrighttop}>
                         <span className={styles.footercontainertitle}>Ubicación</span>
                         <span className={styles.footercontainertext}>Km 9.5 Carretera a Muxbal Guatemala, 01051.</span>
-                        <button className={styles.footercontainerbutton} type="button" onClick={ () => window.open("https://www.google.com/maps/place/Restaurante+La+Pista/@14.5583979,-90.4721467,16z/data=!4m6!3m5!1s0x8589a499486e2b17:0xfb5b9bfd68149e16!8m2!3d14.5589035!4d-90.4735276!16s%2Fg%2F11c59wd2hm?hl=es&entry=ttu", "_blank")}>Cómo llegar</button>
+                        <button className={styles.footercontainerbutton} type="button" onClick={ () => window.open("https://goo.gl/maps/imUxNbggq1jqc3WZ6", "_blank")}>Cómo llegar</button>
                     </div>
                     <div className={styles.footercontainerrightbottom}>
                         <span className={styles.footercontainertitle}>Contacto</span>
