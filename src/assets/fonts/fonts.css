@@ -1,21 +1,6 @@
 @font-face {
-    font-family: 'TT Drugs Trial Bold';
-    src: url('./TTDrugsBold.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'TT Drugs Trial Regular';
-    src: url('./TTDrugsRegular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'TT Drugs Trial Black';
-    src: url('./TTDrugsBlack.otf') format('opentype');
-    font-weight: 900;
+    font-family: 'mont';
+    src: url('./Montserrat-VariableFont_wght.ttf ') format('truetype');
     font-style: normal;
 }
 
