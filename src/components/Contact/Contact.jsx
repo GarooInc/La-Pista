@@ -36,6 +36,10 @@ const Contact = () => {
             if (response.ok) {
                 setPopupMessage("Formulario enviado exitosamente!")
                 setShowPopup(true)
+                setTimeout(() => {
+                    setShowPopup(false)
+                    navigate("/")
+                }, 3000)
             } else {
                 setPopupMessage("Error al enviar el formulario. Inténtalo de nuevo.");
                 setShowPopup(true)
