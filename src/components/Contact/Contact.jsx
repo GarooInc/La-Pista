@@ -19,11 +19,6 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-        console.log(formData)
-
-        const contacto = {contacto: formData }
-        console.log(contacto)
-
         try {
             const response = await fetch(import.meta.env.VITE_API_ENDPOINT, {
                 method: "POST",
