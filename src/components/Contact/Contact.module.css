@@ -96,6 +96,22 @@
     width: 50%;
 }
 
+.contactright__button_disabled{
+    font-family: "HTOWERT";
+    padding: 10px 20px;
+    color: #000000;
+    border : 1px solid #000000;
+    border-color: #000000;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+    width: 50%;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
 .contact__content__info__p{
     font-family: "HTOWERT";
     font-size: 18px;

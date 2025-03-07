@@ -19,6 +19,18 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
+        for (const key in formData) {
+            if (formData[key] === "") {
+                setPopupMessage("Por favor, llena todos los campos.")
+                setShowPopup(true)
+                setTimeout(() => {
+                    setShowPopup(false)
+                }
+                , 2000)
+                return
+            }
+        }
+
         try {
             const response = await fetch(import.meta.env.VITE_API_ENDPOINT, {
                 method: "POST",
@@ -49,10 +61,6 @@ const Contact = () => {
             {showPopup && (
                 <div className={styles.popup}>
                     <p>{popupMessage}</p>
-                    <button onClick={() => {
-                        setShowPopup(false)
-                        navigate("/")
-                    }}>Regresar</button>
                 </div>
             )}
             <div className={styles.contact__content__info__container}>
@@ -66,7 +74,14 @@ const Contact = () => {
                         <input type="text" placeholder="Correo" name="reply_to" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })}/>
                         <input type="text" placeholder="Teléfono" name="cellphone" value={formData.cellphone} onChange={(e) => setFormData({ ...formData, cellphone: e.target.value })}/>
                         <span className={styles.contactright__span}>Fecha tentativa</span>
-                        <input type="date" placeholder="10/01/2024" name="date" value={formData.date} onChange={(e) => setFormData({ ...formData, date: e.target.value })}/>
+                        <input 
+                            type="date" 
+                            placeholder="10/01/2024" 
+                            name="date" 
+                            value={formData.date} 
+                            onChange={(e) => setFormData({ ...formData, date: e.target.value })}
+                            min={new Date().toISOString().split("T")[0]}
+                        />
                         <span className={styles.contactright__span}>Tipo de evento</span>
                         <select name="type_event" id="" value={formData.typeevent} onChange={(e) => setFormData({ ...formData, typeevent: e.target.value })}>
                             <option value="Boda">Boda</option>
@@ -88,7 +103,9 @@ const Contact = () => {
                             value={formData.message}
                             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                         />
-                        <button type="submit" className={styles.contactright__button}>Enviar</button>
+                        <button type="submit" className={formData.name === "" || formData.email === "" || formData.message === "" || formData.typeevent === "" || formData.date === "" ? styles.contactright__button_disabled : styles.contactright__button}>
+                            Enviar
+                        </button>
                     </form>
                 </div>
             </div>
