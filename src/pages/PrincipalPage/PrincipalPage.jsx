@@ -36,8 +36,9 @@ const PrincipalPage = () => {
                             <li><a href='http://boquiteo.com/'>Delivery</a></li>
                             <li onClick={() => setIsMenuOpen(!isMenuOpen)}><a>Menú +</a></li>
                             <ul className={`${styles.home__content__nav__submenu} ${isMenuOpen ? styles.open : ""}`}>
-                                <li><a href="https://drive.google.com/file/d/1bvbwKChnsehmhgbiWXLTbLYyVPFJhSyO/view?mcp_token=eyJwaWQiOjE3NjkxNTMzNTY5Njc1MSwic2lkIjoyNjQ1ODcyMDEsImF4IjoiNzdiZWI2ZmM1NmE2NjYyNjhmNDhiZGE0OGUzZGQ4ZmYiLCJ0cyI6MTY5MzU5MzI3OCwiZXhwIjoxNjk2MDEyNDc4fQ.hWUeKmGMaTU2-ai71S6LkU3QjgD5RIalQNj13kyIpt8">Desayunos</a></li>
-                                <li><a href="https://drive.google.com/file/d/1mk2Vo0pIqcEK0BYtWd_i3bW27-H-KKCc/view?mcp_token=eyJwaWQiOjE3NjkxNTMzNTY5Njc1MSwic2lkIjoyNjQ1ODcyMDEsImF4IjoiN2E0OWU0NjhjMjQxZTQyMzA2MzI1ZDU1ODEzOTZjYTciLCJ0cyI6MTY5MzUwNzM5NSwiZXhwIjoxNjk1OTI2NTk1fQ.uGo6D_sD-fe3w1HncnCk4q8EL84xehJZ4-xIvugQYmM">Almuerzos/Cenas</a></li>
+                                <li><a href="https://cdn.shopify.com/s/files/1/0268/3093/0000/files/Menu_Desayunos_e5524e52-79e1-40a8-8096-15c9ddbc6c76.pdf?v=1748361398">Desayunos</a></li>
+                                <li><a href="https://cdn.shopify.com/s/files/1/0268/3093/0000/files/Menu_La_Pista_2025.pdf?v=1748361350">Almuerzos/Cenas</a></li>
+                                <li><a href="https://cdn.shopify.com/s/files/1/0268/3093/0000/files/Wine_Cocktails_-_La_Pista.ai-2.pdf?v=1748361352">Bebidas</a></li>
                             </ul>
                             <li><a href='https://eatapp.co/reserve/la-pista-20fb20'>Reservaciones</a></li>
                             <li><a href='contact'>Eventos especiales</a></li>
