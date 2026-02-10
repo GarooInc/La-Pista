@@ -37,7 +37,7 @@ const PrincipalPage = () => {
                             <li onClick={() => setIsMenuOpen(!isMenuOpen)}><a>Menú +</a></li>
                             <ul className={`${styles.home__content__nav__submenu} ${isMenuOpen ? styles.open : ""}`}>
                                 <li><a href="https://cdn.shopify.com/s/files/1/0268/3093/0000/files/Menu_Desayunos_e5524e52-79e1-40a8-8096-15c9ddbc6c76.pdf?v=1748361398">Desayunos</a></li>
-                                <li><a href="https://cdn.shopify.com/s/files/1/0268/3093/0000/files/Menu_La_Pista_2025.pdf?v=1748361350">Almuerzos/Cenas</a></li>
+                                <li><a href="https://cdn.shopify.com/s/files/1/0268/3093/0000/files/lapista_menu.pdf?v=1770767215">Almuerzos/Cenas</a></li>
                                 <li><a href="https://cdn.shopify.com/s/files/1/0268/3093/0000/files/Wine_Cocktails_-_La_Pista.ai-2.pdf?v=1748361352">Bebidas</a></li>
                             </ul>
                             <li><a href='https://eatapp.co/reserve/la-pista-20fb20'>Reservaciones</a></li>
