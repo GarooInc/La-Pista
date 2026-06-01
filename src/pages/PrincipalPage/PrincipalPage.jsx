@@ -36,8 +36,8 @@ const PrincipalPage = () => {
                             <li><a href='http://boquiteo.com/'>Delivery</a></li>
                             <li onClick={() => setIsMenuOpen(!isMenuOpen)}><a>Menú +</a></li>
                             <ul className={`${styles.home__content__nav__submenu} ${isMenuOpen ? styles.open : ""}`}>
-                                <li><a href="https://cdn.shopify.com/s/files/1/0268/3093/0000/files/Menu_Desayunos_e5524e52-79e1-40a8-8096-15c9ddbc6c76.pdf?v=1748361398">Desayunos</a></li>
-                                <li><a href="https://cdn.shopify.com/s/files/1/0268/3093/0000/files/lapista_menu.pdf?v=1770767215">Almuerzos/Cenas</a></li>
+                                <li><a href="https://cdn.shopify.com/s/files/1/0458/9148/5863/files/Menu_desayunos_la_pista.pdf?v=1780326161">Desayunos</a></li>
+                                <li><a href="https://cdn.shopify.com/s/files/1/0458/9148/5863/files/MENU_LA_PISTA_2026.pdf?v=1780326179">Almuerzos/Cenas</a></li>
                                 <li><a href="https://cdn.shopify.com/s/files/1/0268/3093/0000/files/Wine_Cocktails_-_La_Pista.ai-2.pdf?v=1748361352">Bebidas</a></li>
                             </ul>
                             <li><a href='https://eatapp.co/reserve/la-pista-20fb20'>Reservaciones</a></li>
